@@ -4,9 +4,7 @@ import { ArrowRight } from 'lucide-react';
 export const Hero = () => {
     return (
         <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
-            {/* Background Glow */}
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-accent-purple/20 blur-[120px] rounded-full -z-10" />
-            <div className="absolute top-1/4 right-1/4 w-[300px] h-[300px] bg-accent-orange/10 blur-[100px] rounded-full -z-10" />
+
 
             <div className="container mx-auto px-6 text-center">
                 <motion.div
@@ -108,36 +106,7 @@ export const Hero = () => {
                 </motion.div>
             </div>
 
-            {/* Decorative Elements */}
-            <motion.div
-                animate={{
-                    y: [0, -20, 0],
-                    rotate: [0, 5, 0],
-                }}
-                transition={{
-                    duration: 10,
-                    repeat: Infinity,
-                    ease: "easeInOut"
-                }}
-                className="absolute bottom-20 left-20 hidden lg:block"
-            >
-                <div className="w-24 h-24 rounded-2xl border-2 border-accent-orange/30 rotate-12 glass shadow-2xl shadow-accent-orange/10" />
-            </motion.div>
 
-            <motion.div
-                animate={{
-                    y: [0, 20, 0],
-                    rotate: [0, -5, 0],
-                }}
-                transition={{
-                    duration: 12,
-                    repeat: Infinity,
-                    ease: "easeInOut"
-                }}
-                className="absolute top-40 right-20 hidden lg:block"
-            >
-                <div className="w-32 h-32 rounded-full border-2 border-accent-purple/30 glass shadow-2xl shadow-accent-purple/10" />
-            </motion.div>
         </section>
     );
 };

@@ -8,6 +8,7 @@ import { Experience } from './components/Experience';
 import { Skills } from './components/Skills';
 import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
+import { WaveBackground } from './components/WaveBackground';
 
 function App() {
   useEffect(() => {
@@ -35,7 +36,7 @@ function App() {
 
   return (
 
-    <div className="bg-background min-h-screen text-white selection:bg-accent-orange/30">
+    <div className="min-h-screen text-white selection:bg-accent-orange/30">
       <Header />
       <main>
         <Hero />
@@ -47,11 +48,8 @@ function App() {
       </main>
       <Footer />
 
-      {/* Global Background Elements */}
-      <div className="fixed inset-0 pointer-events-none -z-20 overflow-hidden">
-        <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-accent-orange/5 blur-[120px] rounded-full" />
-        <div className="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-accent-purple/5 blur-[120px] rounded-full" />
-      </div>
+      {/* Animated Wave Background */}
+      <WaveBackground />
     </div>
   );
 }
