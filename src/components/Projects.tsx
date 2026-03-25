@@ -131,9 +131,6 @@ export const Projects = () => {
                     <h2 className="text-3xl md:text-5xl font-black tracking-tight">
                         SELECTED <span className="text-gradient">WORKS</span>
                     </h2>
-                    <p className="text-muted font-bold text-xs uppercase tracking-widest hidden md:block">
-                        Scroll to explore / 04
-                    </p>
                 </motion.div>
 
                 {/* FEATURED PROJECTS - COMPACT GRID */}
